@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8"/>
+        <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@b9ad45a68c42c9ee0e96f62077cf1e43dd0a66fa/dist/aframe-master.min.js"></script>
+
+
+    <!--<script src="assets/js/master.js"></script> -->
+
+
+    
+  </head>
+  <body>
+    <a-scene>
+     <a-sky crossorigin='anonymous' src="https://cdn.glitch.com/62d6d539-d638-4686-ba78-f926cc1d10a8%2Fdesert.jpg?1544456603475"></a-sky>
+    
+       <a-assets>
+            <a-asset-item id="foo-obj" crossorigin="anonymous" src="https://cdn.glitch.com/62d6d539-d638-4686-ba78-f926cc1d10a8%2FPortal_FInal.obj?1544456633029"></a-asset-item>
+            <a-asset-item id="foo-mtl"  src="assets/models/Portal_FInal2.mtl"></a-asset-item>  
+            <a-asset-item id="portal"  src="https://cdn.glitch.com/62d6d539-d638-4686-ba78-f926cc1d10a8%2FPortal_FInal2.mtl?1544653101720"></a-asset-item>  
+
+
+
+<!-- ** There is a bug with loading and rendering the texture/color for the 3d model. When removed console is clean.**
+              <a-asset-item id="foo-mtl"  src="Textures/Portal_Main.jpg"></a-asset-item>  
+
+
+mtl="#foo-mtl"-->
+
+        </a-assets>
+      <!--<a-entity gltf-model="#portal" position="3 -3 -11" rotation="0 45 0" scale="0.01 0.01 0.01"></a-entity> -->
+
+<a-obj-model src="#foo-obj" mtl="#foo-mtl"  position="3 -3 -11" rotation="0 45 0" ></a-obj-model>  
+
+
+    </a-scene>
+  </body>
+</html>
