@@ -1,0 +1,60 @@
+body {
+	overflow	: hidden;
+	padding		: 0;
+	margin		: 0;
+
+	color		: #eee;
+	background-color: #fff;
+	font-family	:  arial;
+	font-size	: 100%;
+}
+
+#info {
+	position	: absolute;
+	top		    : 24px;
+	width		: 100%;
+	padding		: 5px;
+	text-align	: center;
+}
+
+#search {
+	position	: absolute;
+	top		    : 0px;
+	width		: 100px;
+	padding		: 5px;
+	text-align	: left;
+}
+
+
+#info a {
+	color		: #66F;
+	text-decoration	: none;
+}
+
+#info a:hover {
+	text-decoration	: underline;
+}
+
+a:link {
+    color:white;
+}
+
+a:visited {
+    color:white;
+}
+
+#typeWriter {
+	position	: absolute;
+	bottom		: 0px;
+	left		: 5px;
+	padding		: 5px;
+	text-align	: right;
+    font-size:14px;
+    color:#13ed62;
+    z-index: 1;
+}
+
+#typeWriter a {
+    color:#ebff2e;
+}
+
